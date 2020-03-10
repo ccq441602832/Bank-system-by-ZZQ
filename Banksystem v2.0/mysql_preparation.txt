@@ -1,0 +1,37 @@
+set @@sql_mode = 'NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES';
+
+# 创建user表
+create table `user`(
+id int(8),
+name varchar(32),
+password varchar(32),
+balance bigint(64),
+identity int(2),
+frozen int(2)
+);
+
+# 向user表输入测试用户信息
+insert into `user` values (1,	'Tom',	'123456',	43300,	0,	0),
+(2,	'Zzq',	'ccqzhang',	302100,	1,	0),
+(3,	'Wyh',	'777777',	322500,	0,	0),
+(9,	'Zxq',	'123123',	0,	0,	0),
+(10,	'test',	'test123123',	49800,	0,	0),
+(12,	'test2',	'test123456',	0,	0,	0);
+
+# 创建manager表
+create table `manager`(
+id int(8),
+name varchar(32),
+password varchar(32),
+balance int(32),
+identity int(2),
+frozen int(2)
+);
+
+insert into `manager` values
+(1,	'zzq',	'ccqzhang', Null, 30,	0),
+(2,	'zxq',	'123123', Null, 20,	0),
+(3,	'zdq',	'987654', Null, 10,	1),
+(4,	'testestest',	'test123456789', Null, 10,	0),
+(5,	'test',	'test123456', Null, 20,	0),
+(6,	'wyh',	'777777', Null, 30,	0);
