@@ -4,11 +4,11 @@ import os           # i = os.systen('cls')清空屏幕
 
 @unique
 class Mysql_info(Enum):
-    host = 'localhost'
-    user = 'root'
-    password = 'ccqzhang'
-    db = 'banksystem'
-    port = 3306
+    host = '***'
+    user = '***'
+    password = '***'
+    db = '***'
+    port = ****
     charset = 'utf8'
 
 class User(object):
