@@ -9,6 +9,7 @@ Also, some interesting function is added into Banksystem v2.0.py.
 Before you use the Banksystem v2.0.py, you should create a local mysql(yes, only mysql) table.
 The mysql preparation code is in the text file 'mysql_preparation.txt'. 
 Just login your own mysql system, choose a database, copy the code and run, and the accout info will be there.
+After that, please update the mysql infomation in line 9 - 14 to your own's.
 
 总共有2个版本的银行系统。直接复制代码到本地就可以运行。
 
